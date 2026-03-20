@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main App Container */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: palevioletred;
+  padding: 15px 20px;
+  color: whitesmoke;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Page Container */
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Section Styles */
+.section {
+  padding: 50px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+  background: palevioletred;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: palevioletred;
+}
