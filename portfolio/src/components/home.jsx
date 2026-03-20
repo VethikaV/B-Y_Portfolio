@@ -33,7 +33,7 @@ const Home = () => {
 
         {/* Eyebrow */}
         <div className="hero__eyebrow">
-          AI &amp; Data Science Engineer · Chennai
+          
         </div>
 
         {/* Name block */}

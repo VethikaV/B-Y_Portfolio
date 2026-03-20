@@ -29,6 +29,27 @@ const Project = () => {
               View on GitHub
             </a>
           </div>
+          {/* Clarity Vision */}
+<div className="project__card">
+  <h3>Clarity Vision</h3>
+  <p>
+    An AI-powered healthcare system that analyzes medical images, reports, and clinical data
+    to assist in early detection of cancer and autoimmune diseases using machine learning,
+    deep learning, and OCR technologies.
+  </p>
+  <ul>
+    <li><b>Tech Stack:</b> Python (Flask), CNN, Scikit-learn, OpenCV, Tesseract OCR, Deep Translator</li>
+    <li><b>Features:</b> Blood cancer image classification, OCR-based report analysis, disease prediction, clinical recommendations</li>
+  </ul>
+  <a
+    href="https://github.com/VethikaV/Clarity_Vision.git"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="project__link"
+  >
+    View on GitHub
+  </a>
+</div>
 
           {/* Claims Fraud Detection */}
           <div className="project__card">

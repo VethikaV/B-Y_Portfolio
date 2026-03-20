@@ -35,12 +35,8 @@ body {
 }
 
 /* ============================================================
-   NAVBAR  ← THE FIX
-   The white box was caused by the bare <nav> element getting
-   a default browser background. We now control every element.
+   NAVBAR
    ============================================================ */
-
-/* Reset ALL possible default styles that could cause white box */
 nav, nav * { background: none; border: none; outline: none; }
 
 .navbar {
@@ -52,7 +48,6 @@ nav, nav * { background: none; border: none; outline: none; }
   align-items: center;
   justify-content: space-between;
   padding: 0 3rem;
-  /* fully transparent on load */
   background: transparent !important;
   border-bottom: 1px solid transparent;
   transition: background 0.4s ease, border-color 0.4s ease;
@@ -65,7 +60,6 @@ nav, nav * { background: none; border: none; outline: none; }
   border-bottom-color: var(--border-faint);
 }
 
-/* Logo */
 .navbar__logo {
   font-family: var(--bebas);
   font-size: 1.4rem;
@@ -78,7 +72,6 @@ nav, nav * { background: none; border: none; outline: none; }
   z-index: 2;
 }
 
-/* Nav container */
 .navbar__nav {
   display: flex;
   align-items: center;
@@ -113,7 +106,6 @@ nav, nav * { background: none; border: none; outline: none; }
 
 .navbar__links li button:hover { color: var(--gold); }
 
-/* Hamburger toggle */
 .navbar__toggle {
   display: none;
   flex-direction: column;
@@ -231,14 +223,17 @@ nav, nav * { background: none; border: none; outline: none; }
   border: 1.5px solid var(--gold);
 }
 .hero__btn--gold:hover { background: #e09510; border-color: #e09510; transform: translateY(-1px); }
-
 .hero__btn--outline {
   background: transparent; color: var(--white);
   border: 1.5px solid rgba(255,255,255,0.3);
 }
 .hero__btn--outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
 
-.hero__stats { display: flex; gap: 3rem; animation: fadeUp 0.7s 0.3s ease both; margin-top: 3rem; }
+.hero__stats {
+  display: flex; gap: 3rem;
+  animation: fadeUp 0.7s 0.3s ease both;
+  margin-top: 3rem;
+}
 .hero__stat-num {
   font-family: var(--bebas); font-size: 2.8rem;
   color: var(--gold); line-height: 1; display: block;
@@ -276,7 +271,7 @@ section { padding: var(--section-pad); }
 .s-rule { width: 60px; height: 1px; background: var(--gold); margin-bottom: 3rem; }
 
 /* ============================================================
-   ABOUT PAGE
+   ABOUT
    ============================================================ */
 .about-section {
   background: var(--black-mid);
@@ -285,7 +280,6 @@ section { padding: var(--section-pad); }
 .about-inner { max-width: var(--max-w); margin: 0 auto; }
 .about-header { margin-bottom: 0; }
 
-/* Photo + Bio two-column */
 .about-top-grid {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -342,7 +336,6 @@ section { padding: var(--section-pad); }
 
 .about-skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 
-/* Skill tags */
 .s-tag {
   border: 1px solid var(--white-faint); padding: 9px 14px;
   font-size: 0.78rem; font-weight: 400; color: var(--white-muted);
@@ -352,7 +345,6 @@ section { padding: var(--section-pad); }
 .s-tag:hover { border-color: var(--gold); color: var(--white); }
 .s-tag-dot { width: 5px; height: 5px; background: var(--gold); flex-shrink: 0; }
 
-/* Education block */
 .about-block { margin-bottom: 4rem; }
 .about-block-header { margin-bottom: 0; }
 .about-block-title {
@@ -382,7 +374,6 @@ section { padding: var(--section-pad); }
   letter-spacing: 0.08em; padding: 2px 10px; margin-top: 6px;
 }
 
-/* Internship cards */
 .internship-list { display: flex; flex-direction: column; gap: 1px; }
 
 .internship-item {
@@ -432,7 +423,7 @@ section { padding: var(--section-pad); }
   line-height: 0.9; color: var(--white); letter-spacing: 0.02em; margin-bottom: 1rem;
 }
 .project__grid {
-  display: grid; grid-template-columns: repeat(3,1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 1px; margin-top: 2.5rem;
 }
 .project__card {
@@ -546,33 +537,169 @@ ol.achievement__list li::before {
 }
 
 /* ============================================================
-   RESPONSIVE
+   RESPONSIVE — TABLET  (≤ 900px)
    ============================================================ */
 @media (max-width: 900px) {
+
+  :root { --section-pad: 4.5rem 2rem; }
+
+  /* Navbar */
   .navbar { padding: 0 1.5rem; }
-  .about-top-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .about-photo { height: 260px; }
-  .about-skills-grid { grid-template-columns: 1fr 1fr; }
-  .project__grid { grid-template-columns: 1fr 1fr; }
-  .hero__social { display: none; }
+
+  /* Hero */
   .hero.section { padding: 0 1.5rem 3rem; }
-  section { padding: 4rem 1.5rem; }
+  .hero__social { display: none; }
+  .hero__italic { font-size: clamp(1.6rem, 5vw, 3rem); }
+  .hero__big { font-size: clamp(4rem, 12vw, 10rem); }
+  .hero__stats { gap: 2rem; flex-wrap: wrap; }
+  .hero__stat-num { font-size: 2.4rem; }
+  .hero__meta { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+  .hero__ctas { width: 100%; }
+  .hero__btn { flex: 1; justify-content: center; }
+
+  /* About */
+  .about-top-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .about-photo {
+    width: 100%;
+    height: 300px;
+    object-position: center 20%;
+  }
+  .about-skills-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Projects */
+  .project__grid { grid-template-columns: 1fr 1fr; gap: 1px; }
+
 }
 
-@media (max-width: 640px) {
+/* ============================================================
+   RESPONSIVE — MOBILE  (≤ 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+
+  :root { --section-pad: 3.5rem 1.25rem; }
+
+  /* Navbar */
+  .navbar { padding: 0 1.25rem; height: 56px; }
+  .navbar__logo { font-size: 1.2rem; }
   .navbar__toggle { display: flex; }
   .navbar__nav { display: none; }
+
+  /* Mobile menu drawer */
   .navbar__nav--open {
     display: flex;
     position: fixed;
-    top: 64px; left: 0; right: 0;
-    background: rgba(10, 10, 10, 0.98) !important;
+    top: 56px; left: 0; right: 0;
+    background: rgba(10, 10, 10, 0.99) !important;
     border-bottom: 1px solid var(--border-faint);
-    padding: 1.5rem 2rem;
+    padding: 1.75rem 1.25rem;
+    z-index: 9998;
   }
-  .navbar__nav--open .navbar__links { flex-direction: column; gap: 1.5rem; width: 100%; }
-  .project__grid { grid-template-columns: 1fr; }
-  .about-skills-grid { grid-template-columns: 1fr; }
-  .hero__stats { gap: 2rem; }
-  .hero__stat-num { font-size: 2rem; }
+  .navbar__nav--open .navbar__links {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  .navbar__nav--open .navbar__links li {
+    border-bottom: 1px solid var(--white-faint);
+  }
+  .navbar__nav--open .navbar__links li:last-child { border-bottom: none; }
+  .navbar__nav--open .navbar__links li button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    color: var(--white-muted);
+  }
+  .navbar__nav--open .navbar__links li button:hover { color: var(--gold); }
+
+  /* Hero */
+  .hero.section {
+    padding: 0 1.25rem 2.5rem;
+    min-height: 100svh;
+    justify-content: flex-end;
+  }
+  .hero__eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.75rem;
+  }
+  .hero__eyebrow::before { width: 20px; }
+  .hero__italic { font-size: clamp(1.4rem, 7vw, 2.2rem); margin-bottom: -0.3rem; }
+  .hero__big   { font-size: clamp(3.2rem, 16vw, 5.5rem); letter-spacing: 0.01em; }
+  .hero__name-block { margin-bottom: 1rem; }
+  .hero__meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+  .hero__desc { font-size: 0.8rem; max-width: 100%; }
+  .hero__ctas { flex-direction: column; width: 100%; gap: 0.75rem; }
+  .hero__btn { width: 100%; justify-content: center; padding: 14px 20px; font-size: 0.7rem; }
+  .hero__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .hero__stat { display: flex; flex-direction: column; gap: 2px; }
+  .hero__stat-num { font-size: 2.2rem; }
+  .hero__stat-label { font-size: 0.58rem; }
+
+  /* Section headings */
+  .s-title { font-size: clamp(2.8rem, 10vw, 5rem); margin-bottom: 0.75rem; }
+  .s-eyebrow { font-size: 0.62rem; }
+  .s-rule { margin-bottom: 2rem; }
+
+  /* About */
+  .about-top-grid { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+  .about-photo {
+    width: 100%; height: 260px;
+    object-position: center 15%;
+  }
+  .about-photo-badge { padding: 8px 10px; }
+  .about-photo-badge-num { font-size: 1.3rem; }
+  .about-bio { font-size: 0.88rem; line-height: 1.8; margin-bottom: 1.5rem; }
+  .about-skills-grid { grid-template-columns: 1fr; gap: 6px; }
+  .s-tag { font-size: 0.75rem; padding: 8px 12px; }
+  .about-block { margin-bottom: 3rem; }
+  .about-block-title { font-size: clamp(2rem, 8vw, 3.5rem); }
+
+  /* Education */
+  .edu-row { flex-direction: column; gap: 0.4rem; padding: 1rem 0; }
+  .edu-yr { min-width: unset; font-size: 0.7rem; padding-top: 0; }
+  .edu-info h4 { font-size: 0.88rem; }
+
+  /* Internships */
+  .internship-item { padding: 1.25rem; }
+  .internship-item-head { flex-direction: column; gap: 0.5rem; }
+  .internship-item-role { font-size: 0.92rem; }
+  .internship-item-date { align-self: flex-start; }
+  .internship-item p { font-size: 0.8rem; }
+
+  /* Projects */
+  .project__grid { grid-template-columns: 1fr; gap: 1px; }
+  .project__title { font-size: clamp(2.8rem, 10vw, 5rem); }
+  .project__card { padding: 1.25rem; }
+  .project__card h3 { font-size: 0.92rem; }
+  .project__card p { font-size: 0.78rem; }
+
+  /* Achievements */
+  .achievement > h2 { font-size: clamp(2.8rem, 10vw, 5rem); }
+  .achievement__list li { padding: 0.85rem 1rem; font-size: 0.78rem; }
+  .achievement__list li::before { min-width: 18px; height: 18px; }
+
+  /* Contact */
+  .hc { font-size: clamp(2.8rem, 10vw, 5rem); margin-bottom: 1.5rem; }
+  .contact-link, .contact-detail {
+    padding: 1rem 1.25rem;
+    font-size: 0.82rem;
+    gap: 1rem;
+  }
+  .icon { font-size: 1.1rem; }
+
 }
