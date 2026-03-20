@@ -17,10 +17,6 @@ function About() {
         <div className="about-top-grid sr">
           <div className="about-photo-wrap">
             <img src={vethika} alt="Vethika V" className="about-photo" />
-            <div className="about-photo-badge">
-              <span className="about-photo-badge-num">8.78</span>
-              <span className="about-photo-badge-lbl">CGPA</span>
-            </div>
           </div>
           <div className="about-bio-col">
             <p className="about-bio">
@@ -37,10 +33,12 @@ function About() {
               <div className="s-tag"><span className="s-tag-dot"></span>Machine Learning</div>
               <div className="s-tag"><span className="s-tag-dot"></span>React.js &amp; Node.js</div>
               <div className="s-tag"><span className="s-tag-dot"></span>MySQL &amp; Excel</div>
-              <div className="s-tag"><span className="s-tag-dot"></span>Figma &amp; Illustrator</div>
               <div className="s-tag"><span className="s-tag-dot"></span>LLMs &amp; RAG</div>
               <div className="s-tag"><span className="s-tag-dot"></span>Flask &amp; REST APIs</div>
               <div className="s-tag"><span className="s-tag-dot"></span>Java &amp; C</div>
+              <div className="s-tag"><span className="s-tag-dot"></span>Git &amp; Github</div>
+              <div className="s-tag"><span className="s-tag-dot"></span>AWS EC2(basics) &amp; Manual Testing (basics)</div>
+                <div className="s-tag"><span className="s-tag-dot"></span>Figma &amp; Illustrator</div>
             </div>
           </div>
         </div>
@@ -100,6 +98,15 @@ function About() {
 
             <div className="internship-item">
               <div className="internship-item-head">
+                <div className="internship-item-role">AI Technologies Trainee — CDW Program</div>
+                <span className="internship-item-date">Jan 2025</span>
+              </div>
+              <div className="internship-item-org">Student Technology Empowerment Program</div>
+              <p>Hands-on training in LLMs, prompt engineering, and AI automation. Built a RAG project integrating external knowledge with LLaMA for context-aware outputs and explored AI agent pipelines.</p>
+            </div>
+
+            <div className="internship-item">
+              <div className="internship-item-head">
                 <div className="internship-item-role">Data Engineer Intern</div>
                 <span className="internship-item-date">Jun 2025</span>
               </div>
@@ -107,14 +114,7 @@ function About() {
               <p>Backend and data engineering for ed-tech platforms. SQL optimization, data migration, QA testing, and cross-functional debugging before production deployments.</p>
             </div>
 
-            <div className="internship-item">
-              <div className="internship-item-head">
-                <div className="internship-item-role">AI Technologies Trainee — CDW Program</div>
-                <span className="internship-item-date">Jan 2025</span>
-              </div>
-              <div className="internship-item-org">Student Technology Empowerment Program</div>
-              <p>Hands-on training in LLMs, prompt engineering, and AI automation. Built a RAG project integrating external knowledge with LLaMA for context-aware outputs and explored AI agent pipelines.</p>
-            </div>
+            
 
             <div className="internship-item">
               <div className="internship-item-head">
