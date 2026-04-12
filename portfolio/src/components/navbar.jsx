@@ -19,10 +19,7 @@ const Nav = () => {
   return (
     <header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
 
-      {/* Logo */}
-      <div className="navbar__logo" onClick={() => handleScrollTo("home")}>
-        V
-      </div>
+      
 
       {/* Desktop links — centred */}
       <nav className={`navbar__nav ${isOpen ? "navbar__nav--open" : ""}`}>
