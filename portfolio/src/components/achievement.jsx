@@ -9,7 +9,7 @@ const Achievement = () => {
         {/* Header */}
         <div className="achievement-header sr">
           <span className="s-eyebrow">Recognition</span>
-          <h2 className="s-title">ACHIEVE<em>ments</em></h2>
+          <h2 className="s-title">ACHIEVEMENTS</h2>
           <div className="s-rule"></div>
         </div>
 

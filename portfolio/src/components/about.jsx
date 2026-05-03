@@ -9,7 +9,7 @@ function About() {
         {/* Header */}
         <div className="about-header sr">
           <span className="s-eyebrow">About Me</span>
-          <h2 className="s-title">ABOUT <em>Me</em></h2>
+          <h2 className="s-title">ABOUT ME</h2>
           <div className="s-rule"></div>
         </div>
 
@@ -47,7 +47,7 @@ function About() {
         <div className="about-block sr">
           <div className="about-block-header">
             <span className="s-eyebrow">Academic Background</span>
-            <h3 className="about-block-title">EDUCA<em>tion</em></h3>
+            <h3 className="about-block-title">EDUCATION</h3>
             <div className="s-rule"></div>
           </div>
           <div className="edu-list">
@@ -82,10 +82,20 @@ function About() {
         <div className="about-block sr">
           <div className="about-block-header">
             <span className="s-eyebrow">Experience</span>
-            <h3 className="about-block-title">INTERN<em>ships</em></h3>
+            <h3 className="about-block-title">INTERNSHIPS</h3>
             <div className="s-rule"></div>
           </div>
           <div className="internship-list">
+          
+           <div className="internship-item">
+  <div className="internship-item-head">
+    <div className="internship-item-role">Programmer Trainee</div>
+    <span className="internship-item-date">Jan – Apr 2026</span>
+  </div>
+  <div className="internship-item-org">Cognizant </div>
+  <p>Worked on Azure fundamentals with hands-on experience in Azure Data Factory and Power BI. Built data pipelines and implemented Medallion Architecture (Bronze, Silver, Gold) using Dataflow for processing 3 months of sample data and calculated customer churn prediction and loyality score.</p>
+</div>
+
 
             <div className="internship-item">
               <div className="internship-item-head">
@@ -98,10 +108,10 @@ function About() {
 
             <div className="internship-item">
               <div className="internship-item-head">
-                <div className="internship-item-role">AI Technologies Trainee — CDW Program</div>
+                <div className="internship-item-role">AI Technologies Trainee — Student Technology Empowerment Program</div>
                 <span className="internship-item-date">Jan 2025</span>
               </div>
-              <div className="internship-item-org">Student Technology Empowerment Program</div>
+              <div className="internship-item-org">CDW</div>
               <p>Hands-on training in LLMs, prompt engineering, and AI automation. Built a RAG project integrating external knowledge with LLaMA for context-aware outputs and explored AI agent pipelines.</p>
             </div>
 
