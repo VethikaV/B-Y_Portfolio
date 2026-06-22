@@ -417,6 +417,23 @@ section { padding: var(--section-pad); }
 /* ============================================================
    PROJECTS
    ============================================================ */
+
+.project__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.project__link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f5b041;
+}
+
+.project__live {
+  text-align: right;
+}
 .project__container { max-width: var(--max-w); margin: 0 auto; }
 .project__title {
   font-family: var(--bebas); font-size: clamp(3.5rem, 7vw, 7rem);
