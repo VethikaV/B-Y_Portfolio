@@ -31,11 +31,6 @@ const Home = () => {
 
       <div className="hero__content">
 
-        {/* Eyebrow */}
-        <div className="hero__eyebrow">
-          
-        </div>
-
         {/* Name block */}
         <div className="hero__name-block">
           <span className="hero__big">Vethika V</span>
