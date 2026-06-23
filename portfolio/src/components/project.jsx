@@ -213,15 +213,6 @@ const Project = () => {
       >
         GitHub
       </a>
-
-      <a
-        href="YOUR_YOUTUBE_OR_LIVE_LINK"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="project__link project__live"
-      >
-        YouTube Link
-      </a>
     </div>
   </div>
 </div>

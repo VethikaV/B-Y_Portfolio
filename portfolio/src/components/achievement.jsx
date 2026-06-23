@@ -74,7 +74,8 @@ const Achievement = () => {
               <span className="cert-num">02</span>
               <div className="cert-body">
                 <span className="cert-tag">Cambridge</span>
-                <span className="cert-name">English Linguaskill Business Test — B2 CEFR Level, Score 161</span>
+                <span className="cert-name">English Linguaskill Business Test</span>
+                <span className="cert-grade">B2 CEFR Level (Score 161)</span>
               </div>
             </div>
 
@@ -128,7 +129,8 @@ const Achievement = () => {
               <span className="cert-num">08</span>
               <div className="cert-body">
                 <span className="cert-tag">Govt.</span>
-                <span className="cert-name">Typewriting Senior — English &amp; Tamil (First Class)</span>
+                <span className="cert-name">Typewriting Senior — English &amp; Tamil</span>
+                <span className="cert-grade">First Class</span>
               </div>
             </div>
 

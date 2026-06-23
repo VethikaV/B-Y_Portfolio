@@ -39,9 +39,9 @@ const Home = () => {
         {/* Meta row */}
         <div className="hero__meta">
           <p className="hero__desc">
-            I am a curious and passionate student who enjoys learning new things and exploring ideas. 
-            I like solving problems, building projects, and continuously improving my skills.
-          </p>
+            I am a curious and passionate student with a strong enthusiasm for learning new technologies and exploring innovative ideas. 
+           </p>
+          
           <div className="hero__ctas">
             <a href="#project" className="hero__btn hero__btn--gold">
               <RiArrowRightLine size={14} /> View Projects
@@ -55,11 +55,11 @@ const Home = () => {
         {/* Stats */}
         <div className="hero__stats">
           <div className="hero__stat">
-            <span className="hero__stat-num">8.78</span>
+            <span className="hero__stat-num">8.83</span>
             <span className="hero__stat-label">CGPA</span>
           </div>
           <div className="hero__stat">
-            <span className="hero__stat-num">4</span>
+            <span className="hero__stat-num">4+</span>
             <span className="hero__stat-label">Internships</span>
           </div>
           <div className="hero__stat">
