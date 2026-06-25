@@ -12,6 +12,7 @@ import snakeGameImg from "../assets/snake_game.png";
 import solarSystemImg from "../assets/Solar_System.jpeg";
 import todoListImg from "../assets/to_do_list.jpg";
 import typingSpeedImg from "../assets/type_writing_speed_test.jpg";
+import interviewprep from "../assets/Interview_preparation_platform.jpeg";
 
 
 const Project = () => {
@@ -117,6 +118,50 @@ const Project = () => {
   </div>
 </div>
 
+{/* AI Powered interive prepartion */}
+<div className="project__card">
+ <img src={interviewprep} alt="Interview Preparation Platform" />
+
+<div className="project__content">
+  <h3>AI-Powered Interview Preparation Platform</h3>
+
+  <p>
+    A full-stack web application designed to help students prepare for technical
+    interviews through AI-generated quizzes, personalized assessments, and
+    performance tracking. The platform provides topic-based practice questions,
+    evaluates user responses, and offers insights to improve interview readiness.
+  </p>
+
+  <ul>
+    <li>
+      <b>Tech Stack:</b> React.js, Flask, Python, MongoDB, Openrouter API, JWT
+    </li>
+
+    <li>
+      <b>Modules:</b> User Authentication, Quiz Generation, Assessment Engine,
+      Performance Dashboard, AI Interview Assistant
+    </li>
+
+    <li>
+      <b>Features:</b> AI-generated interview questions, topic and difficulty
+      selection, real-time quiz evaluation, score tracking, personalized
+      feedback, secure login and user progress management
+    </li>
+  </ul>
+
+  <div className="project__buttons">
+  <a
+    href="https://github.com/VethikaV/Interview_preparation_platform.git"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="project__link"
+  >
+    GitHub
+  </a>
+</div>
+</div>
+</div>
+
          {/* Claims Fraud Detection */}
 <div className="project__card">
  <img src={claimsFraud} alt="Claims Fraud Detection" />
@@ -216,6 +261,8 @@ const Project = () => {
     </div>
   </div>
 </div>
+
+
 <div className="project__card">
   <img
     src={safetyDetectionImg}

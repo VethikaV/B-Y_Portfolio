@@ -89,6 +89,20 @@ function About() {
             <div className="s-rule"></div>
           </div>
           <div className="internship-list">
+
+
+            <div className="internship-item">
+            <div className="internship-item-head">
+           <div className="internship-item-role">Machine Learning Intern</div>
+                <span className="internship-item-date">June 2026 – Present</span>
+            </div>
+                  <div className="internship-item-org">Asyncronix (ITNT)</div>
+                       <p>
+                         Contributed to the prototype development of an intelligent exoskeleton system. Worked on Radxa ROCK 5B and
+                         Raspberry Pi 5to integrating computer vision, joint sensor data, and Reinforcement Learning (RL) techniques
+                         to analyze gait patterns and enable real-time posture recognition.
+                        </p>
+                  </div>
           
            <div className="internship-item">
           <div className="internship-item-head">
@@ -98,6 +112,15 @@ function About() {
            <div className="internship-item-org">Cognizant </div>
              <p>Worked on Azure fundamentals with hands-on experience in Azure Data Factory and Power BI. Built data pipelines and implemented Medallion Architecture (Bronze, Silver, Gold) using Dataflow for processing 3 months of sample data and calculated customer churn prediction and loyality score.</p>
           </div>
+
+           <div className="internship-item">
+              <div className="internship-item-head">
+                <div className="internship-item-role">Data Engineer Intern</div>
+                <span className="internship-item-date">Jun 2025</span>
+              </div>
+              <div className="internship-item-org">Vebbox Software Solution</div>
+              <p>Backend and data engineering for ed-tech platforms. SQL optimization, data migration, QA testing, and cross-functional debugging before production deployments.</p>
+            </div>
 
 
             <div className="internship-item">
@@ -109,14 +132,6 @@ function About() {
               <p>Automated employee data integration with Python scripts for large Excel datasets. Designed a multilingual OCR &amp; translation pipeline (Tesseract + Deep Translator, 116+ languages) and a Flask backend for image upload, language detection, and API handling.</p>
             </div>
 
-             <div className="internship-item">
-              <div className="internship-item-head">
-                <div className="internship-item-role">Data Engineer Intern</div>
-                <span className="internship-item-date">Jun 2025</span>
-              </div>
-              <div className="internship-item-org">Vebbox Software Solution</div>
-              <p>Backend and data engineering for ed-tech platforms. SQL optimization, data migration, QA testing, and cross-functional debugging before production deployments.</p>
-            </div>
 
             <div className="internship-item">
               <div className="internship-item-head">
