@@ -35,8 +35,7 @@ const Contact = () => {
     <div className="contact-header">
       <h1>Contact Me</h1>
       <p>
-        Have a project, opportunity, or question? Feel free to reach out.
-        I'd love to connect with you.
+        Have a project in mind, an exciting opportunity, or simply a question? I'd be happy to hear from you. Let's connect and create something impactful together.
       </p>
     </div>
 
