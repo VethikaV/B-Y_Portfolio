@@ -114,6 +114,16 @@ const Project = () => {
       >
         GitHub
       </a>
+
+      <a
+    href=" https://youtu.be/7Sg-_2uD5go?si=yQPc0J4alYpm4fcF"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="project__link project__live"
+  >
+    YouTube Link
+  </a>
+     
     </div>
   </div>
 </div>
