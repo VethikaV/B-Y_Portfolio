@@ -454,6 +454,14 @@ const Project = () => {
       >
         GitHub
       </a>
+      <a
+        href="https://youtu.be/k68UcywwnFs"
+        target="_blank"
+        rel="noopener noreferrer"
+       className="project__link project__live"
+       >
+        YouTube Link
+       </a>
     </div>
   </div>
 </div>
@@ -542,6 +550,14 @@ const Project = () => {
       >
         GitHub
       </a>
+      <a
+        href="https://youtu.be/2rX1cORgJjc"
+        target="_blank"
+        rel="noopener noreferrer"
+       className="project__link project__live"
+       >
+        YouTube Link
+       </a>
     </div>
   </div>
 </div>

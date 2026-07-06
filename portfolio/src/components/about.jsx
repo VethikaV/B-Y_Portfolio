@@ -94,7 +94,7 @@ function About() {
             <div className="internship-item">
             <div className="internship-item-head">
            <div className="internship-item-role">Machine Learning Intern</div>
-                <span className="internship-item-date">June 2026 – Present</span>
+                <span className="internship-item-date">June 2026 </span>
             </div>
                   <div className="internship-item-org">Asyncronix (ITNT)</div>
                        <p>
