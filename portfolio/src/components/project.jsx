@@ -13,7 +13,7 @@ import solarSystemImg from "../assets/Solar_System.jpeg";
 import todoListImg from "../assets/to_do_list.jpg";
 import typingSpeedImg from "../assets/type_writing_speed_test.jpg";
 import interviewprep from "../assets/Interview_preparation_platform.jpeg";
-
+import varaikolImg from "../assets/Varaikol.jpeg";
 
 const Project = () => {
   return (
@@ -23,6 +23,71 @@ const Project = () => {
 
         <div className="project__grid">
 
+
+
+
+{/* Varaikol - AI Drawing Assistant */}
+<div className="project__card">
+  <img
+    src={varaikolImg}
+    alt="Varaikol - AI Drawing Assistant"
+    className="project__image"
+  />
+
+  <div className="project__content">
+    <h3>Varaikol (வரைகோல்) – AI Drawing Assistant</h3>
+
+    <p>
+      Varaikol is an AI-powered drawing assistant designed to help artists
+      practice, create, and improve their artwork. It combines generative AI,
+      computer vision, machine learning, and Retrieval-Augmented Generation
+      (RAG) to provide drawing references, sketch conversion, and intelligent
+      artwork analysis.
+    </p>
+
+    <ul>
+      <li>
+        <b>Tech Stack:</b> React.js, Flask, Python, PyTorch, Hugging Face
+        SigLIP, LangChain, ChromaDB, Stability AI API, OpenCV
+      </li>
+
+      <li>
+        <b>Core Features:</b>
+        <ul>
+          <li>
+            <b>What to Draw:</b> Generates three drawing reference images
+            (Easy, Medium, and Hard) from a user's text prompt using the
+            Stability AI API
+          </li>
+
+          <li>
+            <b>Photo to Sketch:</b> Converts uploaded photos into clean
+            outline sketches by extracting the image edges, making them
+            suitable as drawing references.
+          </li>
+
+          <li>
+            <b>Analyze Drawing:</b> Identifies the drawing medium using a
+            custom-trained SigLIP machine learning model and provides
+            personalized improvement feedback using a RAG-based knowledge base
+            trained on drawing techniques and best practices.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div className="project__buttons">
+      <a
+        href="https://github.com/VethikaV/Varaikol.git"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project__link"
+      >
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
          <div className="project__card">
   <img
     src={codegenerator}
@@ -67,7 +132,6 @@ const Project = () => {
     </div>
   </div>
 </div>
-
 
           {/* Clarity Vision */}
 <div className="project__card">
@@ -127,6 +191,8 @@ const Project = () => {
     </div>
   </div>
 </div>
+
+
 
 {/* AI Powered interive prepartion */}
 <div className="project__card">
@@ -316,6 +382,8 @@ const Project = () => {
     </div>
   </div>
 </div>
+
+
 <div className="project__card">
   <img
     src={portfolioImg}
