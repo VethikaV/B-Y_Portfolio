@@ -1,6 +1,7 @@
 import React from 'react';
 import './CSS/style.css';
 import resume from '../assets/Vethika.pdf';
+
 import {
   RiInstagramLine,
   RiLinkedinBoxFill,
@@ -9,6 +10,8 @@ import {
   RiArrowRightLine
 } from 'react-icons/ri';
 
+import { SiMedium } from 'react-icons/si';
+
 const Home = () => {
   return (
     <section className="hero section" id="home">
@@ -16,18 +19,47 @@ const Home = () => {
       {/* Ghost background text */}
       <div className="hero__bg-text">Learner</div>
 
-      {/* Sidebar socials */}
-      <div className="hero__social">
-        <a href="https://github.com/VethikaV" target="_blank" rel="noopener noreferrer" className="hero__social-link" title="GitHub">
-          <RiGithubFill size={15} />
-        </a>
-        <a href="https://www.linkedin.com/in/vethika-venkatraman-106082210/" target="_blank" rel="noopener noreferrer" className="hero__social-link" title="LinkedIn">
-          <RiLinkedinBoxFill size={15} />
-        </a>
-        <a href="https://www.instagram.com/_vethika__/" target="_blank" rel="noopener noreferrer" className="hero__social-link" title="Instagram">
-          <RiInstagramLine size={15} />
-        </a>
-      </div>
+        {/* Sidebar socials */}
+<div className="hero__social">
+  <a
+    href="https://github.com/VethikaV"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hero__social-link"
+    title="GitHub"
+  >
+    <RiGithubFill size={15} />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/vethika-venkatraman-106082210/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hero__social-link"
+    title="LinkedIn"
+  >
+    <RiLinkedinBoxFill size={15} />
+  </a>
+
+  <a
+    href="https://medium.com/@vethika1681"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hero__social-link"
+    title="Medium"
+  >
+    <SiMedium size={15} />
+  </a>
+    <a
+    href="https://www.instagram.com/_vethika__/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hero__social-link"
+    title="Instagram"
+  >
+    <RiInstagramLine size={15} />
+  </a>
+ </div>
 
       <div className="hero__content">
 
