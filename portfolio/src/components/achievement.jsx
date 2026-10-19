@@ -29,13 +29,6 @@ const Achievement = () => {
               <div className="ach-item-icon">
                 <svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 2.5" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
-              <p>Solved <strong>150+</strong> problems on LeetCode, <strong>1000+</strong> on Skillrack, and <strong>100+</strong> on GeeksforGeeks.</p>
-            </div>
-
-            <div className="ach-item">
-              <div className="ach-item-icon">
-                <svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 2.5" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </div>
               <p>Participated in the Finals of the <strong>AI Innovate Hackathon</strong> conducted by <strong>Sri Eshwar THIRAN 2025</strong> on February 20, 2025.</p>
             </div>
 

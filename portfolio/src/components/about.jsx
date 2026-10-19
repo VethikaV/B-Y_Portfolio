@@ -59,7 +59,7 @@ function About() {
               <div className="edu-info">
                 <h4>B.Tech — Artificial Intelligence &amp; Data Science</h4>
                 <p>St. Joseph's Institute of Technology</p>
-                <span className="edu-grade">CGPA: 8.83</span>
+                <span className="edu-grade">CGPA: 8.82</span>
               </div>
             </div>
             <div className="edu-row">

@@ -87,11 +87,11 @@ const Home = () => {
         {/* Stats */}
         <div className="hero__stats">
           <div className="hero__stat">
-            <span className="hero__stat-num">8.83</span>
+            <span className="hero__stat-num">8.82</span>
             <span className="hero__stat-label">CGPA</span>
           </div>
           <div className="hero__stat">
-            <span className="hero__stat-num">4+</span>
+            <span className="hero__stat-num">5+</span>
             <span className="hero__stat-label">Internships</span>
           </div>
           <div className="hero__stat">
