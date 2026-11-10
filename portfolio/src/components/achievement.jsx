@@ -19,6 +19,17 @@ const Achievement = () => {
           <div className="ach-list">
 
             <div className="ach-item">
+             <div className="ach-item-icon">
+                <svg viewBox="0 0 10 10" fill="none">
+                <path d="M2 5l2.5 2.5L8 2.5" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+               <p>
+               <strong>Research Paper Presentation</strong> — Presented "LLM-Powered Code Generation Using RAG Framework with LLaMA 3" at RV College of Engineering, Bengaluru (November 21, 2025).
+              </p>
+             </div>
+
+            <div className="ach-item">
               <div className="ach-item-icon">
                 <svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 2.5" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
@@ -54,17 +65,8 @@ const Achievement = () => {
           <div className="ach-block-label">Certifications</div>
           <div className="cert-list">
 
-
             <div className="cert-item">
               <span className="cert-num">01</span>
-              <div className="cert-body">
-                <span className="cert-tag">Paper</span>
-                <span className="cert-name">Presented LLM-Powered Code Generation Using RAG Framework with LLaMA 3 at RV College of Engineering, Bengaluru — Nov 21, 2025</span>
-              </div>
-            </div>
-
-            <div className="cert-item">
-              <span className="cert-num">02</span>
               <div className="cert-body">
                 <span className="cert-tag">Cambridge</span>
                 <span className="cert-name">English Linguaskill Business Test</span>
@@ -73,7 +75,7 @@ const Achievement = () => {
             </div>
 
             <div className="cert-item">
-              <span className="cert-num">03</span>
+              <span className="cert-num">02</span>
               <div className="cert-body">
                 <span className="cert-tag">NPTEL</span>
                 <span className="cert-name">Introduction to Operating Systems</span>
@@ -82,7 +84,7 @@ const Achievement = () => {
             </div>
 
             <div className="cert-item">
-              <span className="cert-num">04</span>
+              <span className="cert-num">03</span>
               <div className="cert-body">
                 <span className="cert-tag">NPTEL</span>
                 <span className="cert-name">Python for Data Science</span>
@@ -91,7 +93,7 @@ const Achievement = () => {
             </div>
 
             <div className="cert-item">
-              <span className="cert-num">05</span>
+              <span className="cert-num">04</span>
               <div className="cert-body">
                 <span className="cert-tag">NPTEL</span>
                 <span className="cert-name">Data Mining</span>
@@ -100,7 +102,7 @@ const Achievement = () => {
             </div>
 
             <div className="cert-item">
-              <span className="cert-num">06</span>
+              <span className="cert-num">05</span>
               <div className="cert-body">
                 <span className="cert-tag">NPTEL</span>
                 <span className="cert-name">Database Management Systems</span>
@@ -108,7 +110,7 @@ const Achievement = () => {
             </div>
 
             <div className="cert-item">
-              <span className="cert-num">07</span>
+              <span className="cert-num">06</span>
               <div className="cert-body">
                 <span className="cert-tag">NPTEL</span>
                 <span className="cert-name">Introduction to Machine Learning</span>
@@ -119,7 +121,7 @@ const Achievement = () => {
             
 
             <div className="cert-item">
-              <span className="cert-num">08</span>
+              <span className="cert-num">07</span>
               <div className="cert-body">
                 <span className="cert-tag">Govt.</span>
                 <span className="cert-name">Typewriting Senior — English &amp; Tamil</span>

@@ -17,7 +17,7 @@ const Home = () => {
     <section className="hero section" id="home">
 
       {/* Ghost background text */}
-      <div className="hero__bg-text">Learner</div>
+    
 
         {/* Sidebar socials */}
 <div className="hero__social">
@@ -71,7 +71,7 @@ const Home = () => {
         {/* Meta row */}
         <div className="hero__meta">
           <p className="hero__desc">
-            I am a curious and passionate student with a strong enthusiasm for learning new technologies and exploring innovative ideas. 
+            I am a curious and passionate learner with a strong enthusiasm for learning new technologies and exploring innovative ideas. 
            </p>
           
           <div className="hero__ctas">
